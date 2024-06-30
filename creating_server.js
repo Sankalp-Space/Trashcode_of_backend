@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 // Import the router files
 const personRoutes = require('./routes/personRoute');
 //use the routes
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);
 
 const MenuItem=require('./routes/menuRoutes');
 app.use('/menu',MenuItem);
